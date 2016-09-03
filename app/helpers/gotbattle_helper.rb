@@ -1,0 +1,2 @@
+module GotbattleHelper
+end

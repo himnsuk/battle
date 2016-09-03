@@ -1,0 +1,52 @@
+<div class= "text-danger text-center">
+  <h2>
+    <strong>Battles List</strong>
+  </h2>
+</div>
+<p></p>
+<table class="table-bordered text-center">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Battle Number</th>
+      <th>Attacker King</th>
+      <th>Defender King</th>
+      <th>Attacker Outcome</th>
+      <th>Bettle Type</th>
+      <th>Major Death</th>
+      <th>Major Capture</th>
+      <th>Attacker Size</th>
+      <th>Defender Size</th>
+      <th>Attacker Commander</th>
+      <th>Defender Commander</th>
+      <th>Summer</th>
+      <th>Location</th>
+      <th>Region</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @battle_list.each do |bat| %>
+      <tr>
+        <th><%= bat.name.capitalize %></th>
+        <th><%= bat.year %></th>
+        <th><%= bat.battle_number %></th>
+        <th><%= bat.attacker_king %></th>
+        <th><%= bat.defender_king %></th>
+        <th><%= bat.attacker_outcome %></th>
+        <th><%= bat.bettle_type %></th>
+        <th><%= bat.major_death %></th>
+        <th><%= bat.major_capture %></th>
+        <th><%= bat.attacker_size %></th>
+        <th><%= bat.defender_size %></th>
+        <th><%= bat.attacker_commander %></th>
+        <th><%= bat.defender_commander %></th>
+        <th><%= bat.summer %></th>
+        <th><%= bat.location %></th>
+        <th><%= bat.region %></th>
+        <th><%= bat.note %></th>
+        <% end %>
+      </tr>
+  </tbody>
+</table>
